@@ -7,7 +7,7 @@ router.get('/', function(req, res) {
 });
 
 router.get('/test', function(req, res) {
-  res.render('mainmenu', { title: 'Main Menu' });
+  res.render('mainmenu', { title: 'Main Menu' , checkboxes:});
 });
 
 router.get('/test2', function(req, res) {
