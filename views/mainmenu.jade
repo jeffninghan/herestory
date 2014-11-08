@@ -5,6 +5,7 @@ block content
 	p Welcome to #{title}
 
 	div(class="container")
-		form(class="form-inline" role="form" action="test2")
+		form(role="form" action="test2")
 			input(type="submit" style="background:transparent; border:none; color:transparent")
-			button(type="submit" class="btn btn-default") Submit
+			each x, y in {100:50, 100:200} 
+				button(type="submit" class="btn btn-default" style="position:fixed; top:x; left:y") Submit
