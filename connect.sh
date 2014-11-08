@@ -5,4 +5,4 @@
 ## For the user, we can use "ec2-user" and the public DNS value.
 ssh \
 -i ./herestory.pem \
-ec2-user@ec2-54-68-152-237.us-west-2.compute.amazonaws.com
+ec2-user@ec2-54-148-20-172.us-west-2.compute.amazonaws.com
