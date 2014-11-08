@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome to #{title}
+
+	div(class="container")
+		form(class="form-inline" role="form" action="test2")
+			input(type="submit" style="background:transparent; border:none; color:transparent")
+			button(type="submit" class="btn btn-default") Submit
