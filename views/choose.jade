@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	img(src="/images/choose.png" style="position:absolute; left:0px; top:0px; z-index:0") 
+
+	form(action="http://maps.google.com")
+		input(type="submit" class="btn btn-default" style="position:absolute; top:290px; left:10px; width:370px; height:60px; background:transparent; border:none; color:transparent; outline:none" value="")
+
+	form(action="categories")
+		input(type="submit" class="btn btn-default" style="position:absolute; top:350px; left:10px; width:370px; height:60px; background:transparent; border:none; color:transparent; outline:none" value="")

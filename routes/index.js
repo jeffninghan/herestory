@@ -6,12 +6,20 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'herestory' });
 });
 
-router.get('/test', function(req, res) {
-  res.render('mainmenu', { title: 'Main Menu' });
+router.get('/categories', function(req, res) {
+  res.render('categories', { title: 'Categories' });
 });
 
-router.get('/test2', function(req, res) {
-  res.render('audio', { title: 'Success' });
+router.get('/choose', function(req, res) {
+  res.render('choose', { title: 'Choose' });
+});
+
+router.get('/login', function(req, res) {
+  res.render('login', { title: 'Login' });
+});
+
+router.get('/audio', function(req, res) {
+  res.render('audio', { title: 'Audio' });
 });
 
 module.exports = router;

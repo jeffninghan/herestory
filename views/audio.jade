@@ -1,6 +1,6 @@
 extends layout
 
 block content
-	img(src="/images/132_lg.jpg" style="position:fixed; top:100px; left:50px")
-	audio controls
-		source(src="/audio/132.mp3" type="audio/mpeg")
+	img(src="/images/npr_200_200.png" style="position:relative;left:40px")
+	audio(src='/audio/132.mp3', controls='controls')
+	embed(src='/audio/132.mp3', width='200', height='90', loop='false', autostart='false')
