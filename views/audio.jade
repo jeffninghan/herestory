@@ -1,6 +1,15 @@
 extends layout
 
 block content
-	img(src="/images/npr_200_200.png" style="position:relative;left:40px")
-	audio(src='/audio/132.mp3', controls='controls')
-	embed(src='/audio/132.mp3', width='200', height='90', loop='false', autostart='false')
+	img(src="/images/audio.png" style="position:absolute; left:0px; top:0px; z-index:0; width:32%")
+
+	button(type="submit" class="btn btn-default" style="position:absolute; top:490px; left:130px; width:95px; height:95px; background:transparent; border:none; color:transparent; outline:none; border-radius:100%" onclick="toggle_play()")
+
+	script(type='text/javascript').
+		function toggle_play() {
+			var e = document.getElementById("audio");
+			if(e.style.visibility == 'visible')
+				e.style.visibility = 'hidden';
+			else
+				e.style.visibility = 'visible';
+		}

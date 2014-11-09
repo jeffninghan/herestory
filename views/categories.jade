@@ -1,19 +1,37 @@
 extends layout
 
 block content
-	img(src="/images/categories.png" style="position:absolute; left:0px; top:0px; z-index:0") 
+	img(src="/images/categories.png" style="position:absolute; left:0px; top:0px; z-index:0; width:32%") 
 	
-	img(src="/images/check.png" style="visibility:visible; position:absolute; left:340px; top:150px; z-index:1" id="art")     
-	button(type="submit" class="btn btn-default" style="position:absolute; top:140px; left:0px; width:350px; height:60px; background:transparent; border:none; color:transparent; outline:none" onclick="toggle_visibility('art')")
+	form
+		input(type="submit" class="btn btn-default" style="position:absolute; top:85px; left:260px; width:85px; height:30px; background:transparent; border:none; color:transparent; outline:none" value="")
 
-	img(src="/images/check.png" style="visibility:visible; position:absolute; left:340px; top:265px; z-index:1" id="eng")     
-	button(type="submit" class="btn btn-default" style="position:absolute; top:255px; left:0px; width:350px; height:60px; background:transparent; border:none; color:transparent; outline:none" onclick="toggle_visibility('eng')")
+	img(src="/images/check.png" style="visibility:hidden; position:absolute; left:310px; top:137px; z-index:1; width:33px" id="art")     
+	button(type="submit" class="btn btn-default" style="position:absolute; top:128px; left:0px; width:356px; height:53px; background:transparent; border:none; color:transparent; outline:none" onclick="toggle_visibility('art')")
 
-	img(src="/images/check.png" style="visibility:visible; position:absolute; left:340px; top:330px; z-index:1" id="health")     
-	button(type="submit" class="btn btn-default" style="position:absolute; top:320px; left:0px; width:350px; height:60px; background:transparent; border:none; color:transparent; outline:none" onclick="toggle_visibility('health')")
+	img(src="/images/check.png" style="visibility:hidden; position:absolute; left:310px; top:190px; z-index:1; width:33px" id="bus")     
+	button(type="submit" class="btn btn-default" style="position:absolute; top:181px; left:0px; width:356px; height:53px; background:transparent; border:none; color:transparent; outline:none" onclick="toggle_visibility('bus')")
 
-	img(src="/images/check.png" style="visibility:visible; position:absolute; left:340px; top:450px; z-index:1" id="lang")     
-	button(type="submit" class="btn btn-default" style="position:absolute; top:440px; left:0px; width:350px; height:60px; background:transparent; border:none; color:transparent; outline:none" onclick="toggle_visibility('lang')")
+	img(src="/images/check.png" style="visibility:hidden; position:absolute; left:310px; top:243px; z-index:1; width:33px" id="eng")     
+	button(type="submit" class="btn btn-default" style="position:absolute; top:234px; left:0px; width:356px; height:53px; background:transparent; border:none; color:transparent; outline:none" onclick="toggle_visibility('eng')")
+
+	img(src="/images/check.png" style="visibility:hidden; position:absolute; left:310px; top:296px; z-index:1; width:33px" id="health")     
+	button(type="submit" class="btn btn-default" style="position:absolute; top:287px; left:0px; width:356px; height:53px; background:transparent; border:none; color:transparent; outline:none" onclick="toggle_visibility('health')")
+
+	img(src="/images/check.png" style="visibility:hidden; position:absolute; left:310px; top:349px; z-index:1; width:33px" id="history")     
+	button(type="submit" class="btn btn-default" style="position:absolute; top:340px; left:0px; width:356px; height:53px; background:transparent; border:none; color:transparent; outline:none" onclick="toggle_visibility('history')")
+
+	img(src="/images/check.png" style="visibility:hidden; position:absolute; left:310px; top:402px; z-index:1; width:33px" id="lang")     
+	button(type="submit" class="btn btn-default" style="position:absolute; top:393px; left:0px; width:356px; height:53px; background:transparent; border:none; color:transparent; outline:none" onclick="toggle_visibility('lang')")
+
+	img(src="/images/check.png" style="visibility:hidden; position:absolute; left:310px; top:456px; z-index:1; width:33px" id="lit")     
+	button(type="submit" class="btn btn-default" style="position:absolute; top:447px; left:0px; width:356px; height:53px; background:transparent; border:none; color:transparent; outline:none" onclick="toggle_visibility('lit')")
+
+	img(src="/images/check.png" style="visibility:hidden; position:absolute; left:310px; top:509px; z-index:1; width:33px" id="music")     
+	button(type="submit" class="btn btn-default" style="position:absolute; top:500px; left:0px; width:356px; height:53px; background:transparent; border:none; color:transparent; outline:none" onclick="toggle_visibility('music')")
+
+	img(src="/images/check.png" style="visibility:hidden; position:absolute; left:310px; top:562px; z-index:1" id="news")     
+	button(type="submit" class="btn btn-default" style="position:absolute; top:553px; left:0px; width:356px; height:53px; background:transparent; border:none; color:transparent; outline:none" onclick="toggle_visibility('news')")
 
 	script(type='text/javascript').
 		function toggle_visibility(id) {
