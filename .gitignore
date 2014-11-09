@@ -2,6 +2,7 @@
 herestory.pem
 
 # media
+/public/video
 /public/audio
 /This American Life
 # Logs
